@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Trip:</b>
+  <%= @trip_destination.trip_id %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%= @trip_destination.destination_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_trip_destination_path(@trip_destination) %> |
+<%= link_to 'Back', trip_destinations_path %>

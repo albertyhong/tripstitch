@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  trip_name: MyString
+  start_date: MyString
+  end_date: MyString
+  creator: MyString
+  user_id: 1
+
+two:
+  trip_name: MyString
+  start_date: MyString
+  end_date: MyString
+  creator: MyString
+  user_id: 1

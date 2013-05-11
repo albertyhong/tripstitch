@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :first_name, :last_name, :password_confirmation
   attr_accessor :password 
 
+  has_many :trips
+
   before_save :encrypt_password
 
   validates_confirmation_of :password
