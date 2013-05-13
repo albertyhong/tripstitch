@@ -11,3 +11,75 @@
  *= require_self
  *= require_tree .
  */
+
+/* 
+Project Name: TravelPatch.Us 
+Author: Albert Hong
+*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignleft {
+     float: left;
+}
+
+.alignright {
+     float: right;
+}
+
+/*----------------------------------------------------------------------------- 
+BODY 
+-----------------------------------------------------------------------------*/
+
+#user_nav {
+	height: 40px;
+	width: 940px;
+	background: rgba(51,51,255,0.8);
+	margin: 0 auto;
+	color: white;
+}
+
+#user_nav a {
+	color: rgba(0,255,0,0.9);
+}
+
+#account_status {
+	width: auto;
+	float: right;
+	height: 30px;
+	line-height: 22px;
+}
+
+#container {
+	width: 940px;
+	margin: auto;	
+}
+
+/*---------------------------------------------------------------------------- 
+FOOTER   
+-----------------------------------------------------------------------------*/
+
+#footer {
+	padding: 40px;
+	text-align: center;
+}
+

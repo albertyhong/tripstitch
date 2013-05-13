@@ -1,12 +1,9 @@
 Tripstitch::Application.routes.draw do
   resources :trip_destinations
 
-
   resources :destinations
 
-
   resources :trips
-
 
   get "users/new"
 

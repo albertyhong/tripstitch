@@ -9,20 +9,39 @@
 <body>
 
 <div id = "user_nav">
-	<% if current_user %>
-		Logged in as <%= current_user.email %>
-		<%= link_to "Log Out", log_out_path %>
-	<% else %>
-		<%= link_to "Sign up", sign_up_path %>
-		<%= link_to "Log in", log_in_path %>
-	<% end %>
+	<img src="assets/travelpatch.jpg" alt="Travel Patch" width="35" height="35">
+	Travel Patch
+	<div id = "account_status">
+		<% if current_user %>
+			Logged in as <%= current_user.email %>
+			<%= link_to "Log Out", log_out_path %>
+		<% else %>
+			<%= link_to "Sign up", sign_up_path %>
+			<%= link_to "Log in", log_in_path %>
+		<% end %>
+	</div>
 </div>
 
-<% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, :id => "flash_#{name}" %>
-<% end %>
 
-<%= yield %>
+<div id = "container">
+	<% flash.each do |name, msg| %>
+	    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+	<% end %>
+
+	<%= yield %>
+
+	<div id="footer">
+		<a href="#">
+			<img src="assets/social-icon-twitter.png" alt="Twitter">
+		</a>
+		<a href="#">
+			<img src="assets/social-icon-facebook.png" alt="Facebook">
+		</a>
+		<a href="#">
+			<img src="assets/social-icon-pinterest.png" alt="Pinterest">		
+		</a>
+	</div>
+</div>
 
 </body>
 </html>
