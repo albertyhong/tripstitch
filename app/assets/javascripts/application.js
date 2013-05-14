@@ -17,4 +17,5 @@
 
 $(function() {
   $("#trip_start_date").datepicker();
+  $("#trip_end_date").datepicker();
 });

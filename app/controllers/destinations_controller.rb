@@ -2,7 +2,7 @@ class DestinationsController < ApplicationController
   # GET /destinations
   # GET /destinations.json
   def index
-    @destinations = Destination.all
+    @destinations = Destination.paginate(:page => params[:page], :per_page => 2)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,6 @@
 <h1>Listing destinations</h1>
 
+<%= will_paginate @destinations %>
 <table>
   <tr>
     <th>Name</th>
@@ -23,6 +24,8 @@
   </tr>
 <% end %>
 </table>
+
+<%= will_paginate @movies, { :previous_label => "Back" } %>
 
 <br />
 
