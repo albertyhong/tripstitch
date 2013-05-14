@@ -11,15 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130511185812) do
+ActiveRecord::Schema.define(:version => 20130514032230) do
 
   create_table "destinations", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.string   "location"
     t.integer  "rating"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
   create_table "trip_destinations", :force => true do |t|
@@ -46,8 +50,12 @@ ActiveRecord::Schema.define(:version => 20130511185812) do
     t.string   "email"
     t.string   "password_salt"
     t.string   "password_hash"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+    t.string   "profile_pic_file_name"
+    t.string   "profile_pic_content_type"
+    t.integer  "profile_pic_file_size"
+    t.datetime "profile_pic_updated_at"
   end
 
 end
