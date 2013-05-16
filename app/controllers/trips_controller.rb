@@ -41,10 +41,11 @@ class TripsController < ApplicationController
   # POST /trips.json
   def create
     @trip = Trip.new(params[:trip])
-
+    @trip.user_id = session[:user_id]
     respond_to do |format|
       if @trip.save
         format.html { redirect_to @trip, notice: 'Trip was successfully created.' }
+        # redirect_to short_name_url
         format.json { render json: @trip, status: :created, location: @trip }
       else
         format.html { render action: "new" }

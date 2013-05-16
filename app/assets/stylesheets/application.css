@@ -56,12 +56,21 @@ BODY
 	background: rgba(51,51,255,0.8);
 	margin: 0 auto;
 	color: white;
+	box-shadow: 0 0 10px #000000;
+	border-radius: 10px;
+}
+
+#banner {
+	font-size: 15px;
+	text-shadow: 2px 2px green;
+	padding: 12px 10px 5px 10px;
+	float: left;
 }
 
 h1 {
 	font-size: 15px;
 	text-shadow: 2px 2px green;
-	float: left;
+	/*float: left;*/
 }
 
 #user_nav a {

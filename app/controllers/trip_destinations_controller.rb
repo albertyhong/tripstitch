@@ -41,7 +41,6 @@ class TripDestinationsController < ApplicationController
   # POST /trip_destinations.json
   def create
     @trip_destination = TripDestination.new(params[:trip_destination])
-
     respond_to do |format|
       if @trip_destination.save
         format.html { redirect_to @trip_destination, notice: 'Trip destination was successfully created.' }

@@ -3,6 +3,7 @@
 <%= will_paginate @destinations %>
 <table>
   <tr>
+    <th>&nbsp;</th>
     <th>Name</th>
     <th>Description</th>
     <th>Location</th>
@@ -14,6 +15,7 @@
 
 <% @destinations.each do |destination| %>
   <tr>
+    <td><%= check_box_tag "destinations_id[]", destination.id %></td>
     <td><%= destination.name %></td>
     <td><%= destination.description %></td>
     <td><%= destination.location %></td>
